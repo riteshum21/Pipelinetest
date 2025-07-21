@@ -1,6 +1,6 @@
 module "rg" {
   source = "../Child/RG"
-  rg = "riteshrg"
+  rg = "riteshrg11"
   location = "West Europe"
 }
 
