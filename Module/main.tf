@@ -6,6 +6,7 @@ module "rg" {
 
 module "stg" {
   source = "../Child/STG"
+  depends_on = [ module.rg ]
 rg = "riteshrg"
   location = "West Europe"
   stg = "riteshstg"
