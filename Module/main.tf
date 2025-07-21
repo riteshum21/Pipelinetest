@@ -7,7 +7,7 @@ module "rg" {
 module "stg" {
   source = "../Child/STG"
   depends_on = [ module.rg ]
-rg = "riteshrg"
+rg = "riteshrg11"
   location = "West Europe"
   stg = "riteshstg"
   account_tier = "Standard"
