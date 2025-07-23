@@ -9,7 +9,7 @@ module "stg" {
   depends_on = [ module.rg ]
 rg = "riteshrg11"
   location = "West Europe"
-  stg = "riteshstg"
+  stg = "riteshstg11"
   account_tier = "Standard"
   account_replication_type = "GRS"
 }
