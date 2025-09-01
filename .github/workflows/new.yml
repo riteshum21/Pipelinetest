@@ -28,6 +28,14 @@ jobs:
          terraform_version: latest
     - name: check terraform version 
       run: terraform -version
+    - name: terraform init
+      run: terraform init
+    - name: terraform ormating
+      run: terraform fmt
+    - name: terraform validation
+      run: terraform validate
+    - name: terraform planing
+      run: terraform plan
       
       
           
