@@ -21,5 +21,11 @@ jobs:
         enable-AzPSSession: true
         environment: azurecloud
         auth-type: SERVICE_PRINCIPAL
+
+    - name: terraform install
+      uses: hashicorp/setup-terraform@v2.0.3
+      with:
+         terraform_version: latest
+          
               
         
