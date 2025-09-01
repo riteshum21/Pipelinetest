@@ -1,0 +1,22 @@
+name: new 
+on:
+  push:
+    branches:
+    - main
+    - feature1
+jobs:
+  my_job:
+    name: new job
+    runs-on: ubuntu-latest
+    steps: 
+    - name: Azure Login
+      uses: Azure/login@v2.3.0
+      with:
+        client-id: 7944a279-ad73-4382-9938-8b5d30720c96
+        tenant-id: 749c1dd0-8da4-446d-987c-6deb1b6cbab9
+        subscription-id: 879e262b-becf-4bea-a163-835b023ba8e0
+        enable-AzPSSession: true
+        environment: azurecloud
+        auth-type: SERVICE_PRINCIPAL
+              
+        
