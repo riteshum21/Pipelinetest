@@ -4,6 +4,9 @@ on:
     branches:
     - main
     - feature1
+permissions:
+  id-token: write   
+  contents: read    
 jobs:
   my_job:
     name: new job
