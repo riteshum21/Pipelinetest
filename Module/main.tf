@@ -3,6 +3,12 @@ module "rg" {
   rg = "riteshrg11"
   location = "West Europe"
 }
+# new rg added
+module "rg1" {
+  source = "../Child/RG"
+  rg = "riteshrg1"
+  location = "West Europe"
+}
 
 module "stg" {
   source = "../Child/STG"
