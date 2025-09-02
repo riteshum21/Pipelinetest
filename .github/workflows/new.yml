@@ -28,14 +28,19 @@ jobs:
       uses: hashicorp/setup-terraform@v2.0.3
       with:
          terraform_version: latest
+         
     - name: check terraform version 
       run: terraform -version
+      
     - name: terraform init
       run: terraform -chdir=Module init
+      
     - name: terraform ormating
       run: terraform -chdir=Module fmt
+      
     - name: terraform validation
       run: terraform -chdir=Module validate
+      
     - name: terraform planing
       run: terraform -chdir=Module plan
       
